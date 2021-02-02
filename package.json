@@ -1,0 +1,16 @@
+{
+  "name": "tdd-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "José Eduardo Rodrigues Pinto <jerp86>",
+    "email": "jerp4@hotmail.com",
+    "url": "https://www.linkedin.com/in/jerp86"
+  },
+  "license": "MIT"
+}
