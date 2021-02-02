@@ -1,4 +1,4 @@
-export default number => {
+const getFactorial = number => {
   let factorial = 1;
   for (let i = number; i >= 1; i--) {
     factorial = factorial * i;
@@ -6,3 +6,5 @@ export default number => {
 
   return factorial;
 };
+
+export default getFactorial;
