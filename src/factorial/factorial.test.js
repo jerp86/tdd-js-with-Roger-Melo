@@ -19,3 +19,13 @@ describe('Happy Path', () => {
     expect(actual).toBe(expected);
   });
 });
+
+describe('Unhappy Path', () => {
+  test('getFactorial() should throw a TypeError', () => {
+    try {
+      getFactorial();
+    } catch ({ name }) {
+      expect(name).toBe('TypeError');
+    }
+  });
+});

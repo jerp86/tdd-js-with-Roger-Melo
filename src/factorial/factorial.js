@@ -1,4 +1,8 @@
 const getFactorial = number => {
+  if (typeof number !== 'number') {
+    throw new TypeError()
+  }
+
   if (number === 1) {
     return 1;
   }
