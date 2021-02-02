@@ -1,10 +1,9 @@
 const getFactorial = number => {
-  let factorial = 1;
-  for (let i = number; i >= 1; i--) {
-    factorial = factorial * i;
+  if (number === 1) {
+    return 1;
   }
 
-  return factorial;
+  return number * getFactorial(number - 1);
 };
 
 export default getFactorial;
