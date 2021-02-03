@@ -5,7 +5,7 @@ const getFactorial = number => {
     throw new TypeError(typeErrorMessage)
   }
 
-  if (number === 1) {
+  if (number === 1 || number === 0) {
     return 1;
   }
 

@@ -37,4 +37,11 @@ describe('Unhappy Path', () => {
       expect(message).toBe(typeErrorMessage);
     }
   });
+
+  test('getFactorial(0) should return 1', () => {
+    const actual = getFactorial(0);
+    const expected = 1;
+
+    expect(actual).toBe(expected);
+  });
 });
