@@ -12,7 +12,9 @@ const getFactorial = number => {
     throw new RangeError(rangeErrorMessage);
   }
 
-  return (number === 1 || number === 0) ? 1 : (number * getFactorial(number - 1));
+  const isOneOrZero = (number === 1 || number === 0);
+
+  return isOneOrZero ? 1 : (number * getFactorial(number - 1));
 };
 
 export default getFactorial;
