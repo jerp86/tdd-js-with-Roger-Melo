@@ -1,6 +1,8 @@
+import { typeErrorMessage } from './utils';
+
 const getFactorial = number => {
   if (typeof number !== 'number') {
-    throw new TypeError('getFactorial should receive a number as argument')
+    throw new TypeError(typeErrorMessage)
   }
 
   if (number === 1) {

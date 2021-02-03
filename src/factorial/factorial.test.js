@@ -1,4 +1,5 @@
 import getFactorial from './factorial';
+import { typeErrorMessage } from './utils';
 
 describe('Happy Path', () => {
   test('getFactorial should be a function', () => {
@@ -28,8 +29,6 @@ describe('Unhappy Path', () => {
       expect(name).toBe('TypeError');
     }
   });
-
-  const typeErrorMessage = 'getFactorial should receive a number as argument';
 
   test(`getFactorial() should throw a TypeError with message "${typeErrorMessage}"`, () => {
     try {
