@@ -52,4 +52,12 @@ describe('Unhappy Path', () => {
       expect(name).toBe('RangeError');
     }
   });
+
+  test('getFactorial(-1) should throw a RangeError with message "getFactorial should receive a number between 0 and 20 as argument"', () => {
+    try {
+      getFactorial(-1);
+    } catch ({ message }) {
+      expect(message).toBe('getFactorial should receive a number between 0 and 20 as argument');
+    }
+  });
 });

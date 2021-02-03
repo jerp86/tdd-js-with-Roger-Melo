@@ -6,7 +6,7 @@ const getFactorial = number => {
   }
 
   if (number < 0 || number > 20) {
-    throw new RangeError();
+    throw new RangeError('getFactorial should receive a number between 0 and 20 as argument');
   }
 
   if (number === 1 || number === 0) {
