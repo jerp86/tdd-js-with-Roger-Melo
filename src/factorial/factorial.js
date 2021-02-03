@@ -1,7 +1,8 @@
 import { typeErrorMessage, rangeErrorMessage } from './utils';
 
 const getFactorial = number => {
-  if (typeof number !== 'number') {
+  const isNotNumber = typeof number !== 'number';
+  if (isNotNumber) {
     throw new TypeError(typeErrorMessage)
   }
 
