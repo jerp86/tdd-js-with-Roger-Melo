@@ -44,4 +44,12 @@ describe('Unhappy Path', () => {
 
     expect(actual).toBe(expected);
   });
+
+  test('getFactorial(-1) should throw a RangeError', () => {
+    try {
+      getFactorial(-1);
+    } catch ({ name }) {
+      expect(name).toBe('RangeError');
+    }
+  });
 });
