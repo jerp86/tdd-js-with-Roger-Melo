@@ -1,6 +1,6 @@
 const getFactorial = number => {
   if (typeof number !== 'number') {
-    throw new TypeError()
+    throw new TypeError('getFactorial should receive a number as argument')
   }
 
   if (number === 1) {

@@ -28,4 +28,14 @@ describe('Unhappy Path', () => {
       expect(name).toBe('TypeError');
     }
   });
+
+  const typeErrorMessage = 'getFactorial should receive a number as argument';
+
+  test(`getFactorial() should throw a TypeError with message "${typeErrorMessage}"`, () => {
+    try {
+      getFactorial();
+    } catch ({ message }) {
+      expect(message).toBe(typeErrorMessage);
+    }
+  });
 });
