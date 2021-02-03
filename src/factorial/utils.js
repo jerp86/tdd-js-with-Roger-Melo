@@ -1,0 +1,1 @@
+export const typeErrorMessage = 'getFactorial should receive a number as argument';
