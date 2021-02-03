@@ -1,5 +1,5 @@
 import getFactorial from './factorial';
-import { typeErrorMessage } from './utils';
+import { typeErrorMessage, rangeErrorMessage } from './utils';
 
 describe('Happy Path', () => {
   test('getFactorial should be a function', () => {
@@ -53,11 +53,11 @@ describe('Unhappy Path', () => {
     }
   });
 
-  test('getFactorial(-1) should throw a RangeError with message "getFactorial should receive a number between 0 and 20 as argument"', () => {
+  test(`getFactorial(-1) should throw a RangeError with message "${rangeErrorMessage}"`, () => {
     try {
       getFactorial(-1);
     } catch ({ message }) {
-      expect(message).toBe('getFactorial should receive a number between 0 and 20 as argument');
+      expect(message).toBe(rangeErrorMessage);
     }
   });
 });
